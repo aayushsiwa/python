@@ -1,0 +1,10 @@
+def appenfile(fname):
+	f=open(fname,"a+")
+	city=input('enter the name of the city:')
+	f.write(city+'\n')
+	f.close()
+	f=open(fname,'r')
+	print(f.read())
+	f.close()
+file=input('enter the name of the file:')
+appenfile(file)
